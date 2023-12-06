@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!--FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kalkulator Segitiga</title>
+</head>
+
+<body>
+    <div id="tentang">
+        <center>
+            <h2>MENGHITUNG LUAS DAN KELILING SEGITIGA</h2>
+            <h4>Dibuat: Yuki Silviani</h4>
+            <h4>
+                Selamat datang di web apps sederhana saya
+            </h4>
+        </center>
+        <br>
+    </div>
+    <header id="navigation-bar">
+        <h3 id="logo">KALTIK Segitiga</h3>
+        <nav class="navigation">
+            <a href="#luas-segitiga">LUAS</a>
+            <p></p>
+            <a href="#keliling-segitiga">KELILING</a>
+        </nav>
+    </header>
+    <!--END HEADER-->
+    <main>
+        <div class="container-gambar">
+            <center>
+                <h1 id="luas-segitiga">MENGHITUNG LUAS SEGITIGA</h1>
+                <img src="assets/luas.jpeg" alt="luas-segitiga" width="500px">
+            </center>
+        </div>
+        <p></p>
+        <section class="input-luas-section">
+            <label for="inputAlas" id="label-alas">Alas (a)</label>
+            <input type="number" id="inputAlas" class="Yuki" placeholder="Masukkan Panjang Alas Segitiga">
+            <p></p>
+            <label for="inputTinggi" id="label-tinggi">Tinggi (t)</label>
+            <input type="number" id="inputTinggi" class="Yuki" placeholder="Masukkan Tinggi Segitiga">
+
+            <div class="buttons">
+                <br>
+                <button onclick="kalkulatorLuas()">Hitung</button>
+                <button onclick="resetFormLuas()">Reset</button>
+            </div>
+            <p id="resultLuas"></p>
+        </section>
+        <p></p>
+        <!--END MENGHITUNG LUAS SEGITIGA-->
+        <div class="container-gambar">
+            <center>
+                <h1 id="keliling-segitiga">MENGHITUNG KELILING SEGITIGA</h1>
+                <img src="assets/keliling.png" alt="keliling-segitiga" width="350px">
+            </center>
+            <p></p>
+        </div>
+        <section class="input-luas-section">
+            <label for="inputSisiA" id="label-sisi-A">Sisi A</label>
+            <input type="number" id="inputSisiA" class="Yuki" placeholder="Masukkan Panjang Sisi Segitiga">
+            <p></p>
+            <label for="inputSisiB" id="label-sisi-B">Sisi B</label>
+            <input type="number" id="inputSisiB" class="Yuki" placeholder="Masukkan Panjang Sisi Segitiga">
+            <p></p>
+            <label for="inputSisiC" id="label-sisi-C">Sisi C</label>
+            <input type="number" id="inputSisiC" class="Yuki" placeholder="Masukkan Panjang Sisi Segitiga">
+
+            <div class="buttons">
+                <br>
+                <button onclick="kalkulatorKeliling()">Hitung</button>
+                <button onclick="resetFormKeliling()">Reset</button>
+            </div>
+            <p id="resultKeliling"></p>
+
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="socialmedia">
+                <ul class="ul-sosmed">
+                    <li class="li-sosmed"><a href="https://www.linkedin.com/in/yuki-silviani-96166b217/"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <p></p>
+                    <li class="li-sosmed"><a href="https://www.instagram.com/callmekii_/"><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
